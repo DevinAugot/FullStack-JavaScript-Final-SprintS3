@@ -1,0 +1,40 @@
+{
+  "name": "final-sprint-s3-fsjs",
+  "version": "1.0.0",
+  "description": "Final sprint - Movie Search Engine",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watchALL --verbose"
+  
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sprint-Week-Team/Final-Sprint-S3-FSJS.git"
+  },
+  "author": "Devin Augot",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sprint-Week-Team/Final-Sprint-S3-FSJS/issues"
+  },
+  "homepage": "https://github.com/Sprint-Week-Team/Final-Sprint-S3-FSJS#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "date-fns": "^2.29.3",
+    "dotenv": "^16.0.3",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "express-flash": "^0.0.2",
+    "express-session": "^1.17.3",
+    "method-override": "^3.0.0",
+    "mongodb": "^5.2.0",
+    "nodemon": "^2.0.22",
+    "passport": "^0.6.0",
+    "passport-local": "^1.0.0",
+    "pg": "^8.10.0",
+    "util": "^0.12.5",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "jest": "^29.5.0"
+  }
+}

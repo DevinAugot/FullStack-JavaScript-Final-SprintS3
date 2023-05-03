@@ -1,0 +1,31 @@
+<html lang="en">
+    <body>
+        <%- include('./partials/nav.ejs') %>
+       
+        <div class="user-name"><h3>Welcome, <%= name %>!</h3></div>
+        
+        
+                <div class="search-container">
+                    <form action="/search" method="get">
+                        <select class="search-dropdown" name="search-type" id="search-type">
+                          <option value="title">Title</option>
+                          <option value="genre">Genre</option>
+                          <option value="year">Year</option>
+                        </select>                  
+                        <br/>
+                        <input class="search-input"type="text" name="search-input" placeholder="Search...">
+                        <button class="search-button" type="submit">Search</button>
+                    </form>
+                 
+                </div>
+                <% if (errorMessage != "") { %>
+                    <div class="error-message"><%= errorMessage %></div>
+                  <% } %>
+               
+                <%- include('./partials/footer.ejs') %>
+              
+                
+
+    </body>
+    <link rel="stylesheet" href="/styles.css">
+</html>

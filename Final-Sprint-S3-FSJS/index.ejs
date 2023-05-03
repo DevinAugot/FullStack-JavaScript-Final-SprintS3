@@ -1,0 +1,23 @@
+<html lang="en">
+  <body>
+    <% include('./partials/nav.ejs') %>
+    <div class="user-name"><h3>Welcome, <%= name %>!</h3></div>
+        
+    <div class="content">
+      <form action="/search" method="GET">
+        <div class="search-container">
+          <input type="text" placeholder="Search..." class="search-input" name="searchQuery">
+          <select class="search-dropdown" name="queryType">
+            <option value="year">Year</option>
+            <option value="genre">Genre</option>
+            <option value="title">Title</option>
+          </select>
+        </div>
+        <button type="submit">Search</button>
+      </form>
+              
+      <% include('./partials/Logout.ejs') %>
+    </div>
+    <link rel="stylesheet" href="/styles.css">
+  </body>
+</html>

@@ -1,0 +1,124 @@
+20230409	08:02:49	THE HOME PAGE WAS VISITED.	information	undefined	a758ccdb-ab35-4813-a73d-c00dadb63b89
+20230409	08:04:02	INFORMATION	function next(err) {
+    // signal to exit route
+    if (err && err === 'route') {
+      return done();
+    }
+
+    // signal to exit router
+    if (err && err === 'router') {
+      return done(err)
+    }
+
+    // max sync stack
+    if (++sync > 100) {
+      return setImmediate(next, err)
+    }
+
+    var layer = stack[idx++]
+
+    // end of layers
+    if (!layer) {
+      return done(err)
+    }
+
+    if (layer.method && layer.method !== method) {
+      next(err)
+    } else if (err) {
+      layer.handle_error(err, req, res, next);
+    } else {
+      layer.handle_request(req, res, next);
+    }
+
+    sync = 0
+  }	the home page was visited.	0faf7de9-5d6e-4993-a6b8-04625ca02b38
+20230409	08:05:28	INFORMATION	function next(err) {
+    // signal to exit route
+    if (err && err === 'route') {
+      return done();
+    }
+
+    // signal to exit router
+    if (err && err === 'router') {
+      return done(err)
+    }
+
+    // max sync stack
+    if (++sync > 100) {
+      return setImmediate(next, err)
+    }
+
+    var layer = stack[idx++]
+
+    // end of layers
+    if (!layer) {
+      return done(err)
+    }
+
+    if (layer.method && layer.method !== method) {
+      next(err)
+    } else if (err) {
+      layer.handle_error(err, req, res, next);
+    } else {
+      layer.handle_request(req, res, next);
+    }
+
+    sync = 0
+  }	the home page was visited.	22ad845d-cc1d-4a07-974b-d30ce263aaa9
+20230409	08:05:51	INFORMATION	function next(err) {
+    // signal to exit route
+    if (err && err === 'route') {
+      return done();
+    }
+
+    // signal to exit router
+    if (err && err === 'router') {
+      return done(err)
+    }
+
+    // max sync stack
+    if (++sync > 100) {
+      return setImmediate(next, err)
+    }
+
+    var layer = stack[idx++]
+
+    // end of layers
+    if (!layer) {
+      return done(err)
+    }
+
+    if (layer.method && layer.method !== method) {
+      next(err)
+    } else if (err) {
+      layer.handle_error(err, req, res, next);
+    } else {
+      layer.handle_request(req, res, next);
+    }
+
+    sync = 0
+  }	the home page was visited.	f757b8c8-1056-424e-a881-706000317549
+20230409	08:06:23	THE HOME PAGE WAS VISITED.	information	undefined	7382cc9b-3f39-471a-822c-6c75d4d95bff
+20230409	08:06:28	THE HOME PAGE WAS VISITED.	information	undefined	3b43389f-b66b-45a8-b895-91268cb0cf95
+20230409	08:48:37	THE HOME PAGE WAS VISITED.	information	undefined	2ee7db18-1678-4604-bb66-f105495a55a7
+20230409	08:57:22	THE HOME PAGE WAS VISITED.	information	undefined	5f1721e6-1a04-4b9f-a3ce-7e1b24165147
+20230409	09:17:12	EVENT	information	the home page was visited.	355b4b01-0a84-4709-98a5-a7d2d0968053
+20230409	09:18:59	INFORMATION	/	the home page was visited.	305b2319-136f-46cb-972c-605014c51bcb
+20230409	09:22:05	INFORMATION	[object Object]	the home page was visited.	3c47f608-203a-4e99-a79e-50f4ef2be5be
+20230409	09:23:38	INFORMATION	Luke Jones	the home page was visited.	0305cf9b-9207-4f4e-845e-f0a9aaf786a4
+20230409	09:26:16	INFORMATION	4ab0468b-6b1a-4067-b492-8907e04abb53	visited the home page.	23f055e1-b58e-4c72-a969-e2d3c01ae607
+20230409	09:28:04	INFORMATION	4ab0468b-6b1a-4067-b492-8907e04abb53	visited the home page.	3c2445d4-fec3-4b0c-b914-4a0605fe201f
+20230409	09:28:07	INFORMATION	4ab0468b-6b1a-4067-b492-8907e04abb53	visited the sample1 page.	e1a60d6b-d013-4ded-9b8f-26b0da364a36
+20230409	09:28:09	INFORMATION	4ab0468b-6b1a-4067-b492-8907e04abb53	visited the sample2 page.	5ef0dadb-d9bd-468b-b168-1337d6788444
+20230409	09:28:09	INFORMATION	4ab0468b-6b1a-4067-b492-8907e04abb53	visited the sample1 page.	7f403797-a889-4775-a376-5dd090ab03e6
+20230409	09:38:28	INFORMATION	undefined	has registered succesfully.	b2d96541-a26a-40a0-a917-10104d148cd9
+20230409	09:39:10	INFORMATION	undefined	has registered succesfully.	af8f1233-d383-4020-9ead-26265b068137
+20230409	09:40:28	INFORMATION	undefined	has registered succesfully.	d774e213-88cf-467c-9c33-14df03eb9515
+20230409	09:40:47	INFORMATION	f959a81e-7118-4721-b7e1-0cc8764984a9	has registered succesfully.	1f034924-7eae-4437-8951-7003e3dc4b0b
+20230409	09:41:56	INFORMATION	708b404b-1141-4c35-9f54-5116d7e744ad	has registered succesfully.	5b981b04-3228-4ba0-b65e-cbe705d697b7
+20230409	09:42:24	INFORMATION	undefined	has registered succesfully.	a5f9a8bb-8452-49cb-932b-9775ecaf24ea
+20230409	09:48:01	INFORMATION	4ab0468b-6b1a-4067-b492-8907e04abb53	visited the home page.	76158874-8906-4c64-9a5e-43626e42200b
+20230409	09:48:30	INFORMATION	4ab0468b-6b1a-4067-b492-8907e04abb53	visited the sample1 page.	04e8589c-64c2-4f62-ace5-10839380cde2
+20230409	09:48:31	INFORMATION	4ab0468b-6b1a-4067-b492-8907e04abb53	visited the sample2 page.	b08d89a6-10a4-4d01-8cc7-acb02035c4b6
+20230409	09:48:32	INFORMATION	4ab0468b-6b1a-4067-b492-8907e04abb53	visited the sample1 page.	c49daa6a-24b3-4ab8-b63e-850475398f45
+20230409	09:48:33	INFORMATION	4ab0468b-6b1a-4067-b492-8907e04abb53	visited the home page.	b76fb65a-a859-4b4e-9bf5-8bf4b2a76a98

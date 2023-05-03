@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search Results</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <%- include('./partials/nav.ejs') %>
+    <div class="content">
+      <h1>Search Results:</h1>
+      
+      <ul>
+        <% if (movies.length === 0) { %>
+        <li>No movies found.</li>
+        <% } else { %> <% movies.forEach(function(movie) { %>
+        <li> 
+          (Title: <%= movie.movie_title %>) (ID: <%= movie.movie_id %>)(Year:
+          <%= movie.movie_year %>)(Genre: <%= movie.movie_genre %>)
+        </li>
+        <% }) %> <% } %>
+      </ul>
+    </div>
+  </body>
+</html>

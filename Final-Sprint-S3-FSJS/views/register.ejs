@@ -1,0 +1,32 @@
+<html lang="en"></html>
+<body>
+
+<%- include('./partials/loginNav.ejs') %>
+<% if (errorMessage != "") { %>
+    <div class="error-message"><%= errorMessage %></div>
+  <% } %>
+<div class="form-container">
+<form action="/register" method="POST">
+    <div> 
+        <label for="name">Name</label>
+        <input type="name" id="name" name="name" required>
+    </div>
+    <div> 
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+    </div>
+    <div> 
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+    </div>
+    <button type="submit">Register</button>
+</form>
+<p> If you have an account already hit the Login link below</p>
+<a href="/login" style="
+    padding-left: 230px;
+">Login</a>
+</div>
+
+</body>
+<link rel="stylesheet" href="/styles.css">
+</html>
